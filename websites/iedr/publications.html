@@ -34,7 +34,11 @@
 		<script src="js/jquery-ui-1.11.4.js"> </script>
 		<script>
 		  $(function() {
-    			$( "#tabs" ).tabs().addClass( "ui-tabs-vertical ui-helper-clearfix" );
+    			$( "#tabs" ).tabs(
+						{
+						  show: { effect: "fadeIn", duration: 1000 }
+						}
+					).addClass( "ui-tabs-vertical ui-helper-clearfix" );
    			 $( "#tabs li" ).removeClass( "ui-corner-top" ).addClass( "ui-corner-left" );
  			 });
  		</script>
@@ -65,7 +69,7 @@
             <section class="wrapper" id="publications">
   	          <div class="container">
                 <div class="row" id="tabs">
-                    <div class="4u 12u$(xsmall)" style="padding-left:10em; padding-right:3em">
+                    <div class="4u 12u$(xsmall)" style="min-width:50px">
 
                         <h4>Publications</h4>
                         <ul class="alt" >
