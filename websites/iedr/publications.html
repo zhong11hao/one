@@ -25,12 +25,20 @@
 		<script src="js/jquery.min.js"></script>
 		<script src="js/skel.min.js"></script>
 		<script src="js/skel-layers.min.js"></script>
-		<script src="js/init.js"></script>
+		<script src="js/init.js"></script>	
 		<noscript>
 			<link rel="stylesheet" href="css/skel.css" />
 			<link rel="stylesheet" href="css/style.css" />
 			<link rel="stylesheet" href="css/style-xlarge.css" />
 		</noscript>
+		<script src="js/jquery-ui-1.11.4.js"> </script>
+		<script>
+		  $(function() {
+    			$( "#tabs" ).tabs().addClass( "ui-tabs-vertical ui-helper-clearfix" );
+   			 $( "#tabs li" ).removeClass( "ui-corner-top" ).addClass( "ui-corner-left" );
+ 			 });
+ 		</script>
+
 	</head>
 	<body>
 
@@ -56,7 +64,7 @@
 
             <section class="wrapper" id="publications">
   	          <div class="container">
-                <div class="row">
+                <div class="row" id="tabs">
                     <div class="4u 12u$(xsmall)" style="padding-left:10em; padding-right:3em">
 
                         <h4>Publications</h4>
@@ -71,68 +79,31 @@
 
                     </div>
                     <div class="8u$ 12u$(xsmall)" style="height:400px; overflow:scroll">
-
-                        <h4 id="journal">Journal Papers</h4>
-                        <ol>
-                            <li>Dolor pulvinar etiam magna etiam.</li>
-                            <li>Etiam vel felis at lorem sed viverra.</li>
-                            <li>Felis enim feugiat dolore viverra.</li>
-                            <li>Dolor pulvinar etiam magna etiam.</li>
-                            <li>Etiam vel felis at lorem sed viverra.</li>
-                            <li>Felis enim feugiat dolore viverra.</li>
-                        </ol>
+                        <div id="journal">
+                            <h4>Journal Papers</h4>
+                            <ol>
+                                <li>Dolor pulvinar etiam magna etiam.</li>
+                                <li>Etiam vel felis at lorem sed viverra.</li>
+                                <li>Felis enim feugiat dolore viverra.</li>
+                                <li>Dolor pulvinar etiam magna etiam.</li>
+                                <li>Etiam vel felis at lorem sed viverra.</li>
+                                <li>Felis enim feugiat dolore viverra.</li>
+                            </ol>
+                        </div>
+                           
+                        <div id="conference">
+			    <h4> Conference Papers</h4>
+                            <ol>
+                                <li>Felis enim feugiat dolore viverra.</li>
+                            </ol>
+			</div>
                         
-                        <h4 id="conference">Conference Papers</h4>
-                        <ol>
-                            <li>Dolor pulvinar etiam magna etiam.</li>
-                            <li>Etiam vel felis at lorem sed viverra.</li>
-                            <li>Felis enim feugiat dolore viverra.</li>
-                            <li>Dolor pulvinar etiam magna etiam.</li>
-                            <li>Etiam vel felis at lorem sed viverra.</li>
-                            <li>Felis enim feugiat dolore viverra.</li>
-                        </ol>
-                        
-                        <h4 id="book">Books and Book Chapters</h4>
-                        <ol>
-                            <li>Dolor pulvinar etiam magna etiam.</li>
-                            <li>Etiam vel felis at lorem sed viverra.</li>
-                            <li>Felis enim feugiat dolore viverra.</li>
-                            <li>Dolor pulvinar etiam magna etiam.</li>
-                            <li>Etiam vel felis at lorem sed viverra.</li>
-                            <li>Felis enim feugiat dolore viverra.</li>
-                        </ol>
-                        
-                        <h4 id="theses">Theses</h4>
-                        <ol>
-                            <li>Dolor pulvinar etiam magna etiam.</li>
-                            <li>Etiam vel felis at lorem sed viverra.</li>
-                            <li>Felis enim feugiat dolore viverra.</li>
-                            <li>Dolor pulvinar etiam magna etiam.</li>
-                            <li>Etiam vel felis at lorem sed viverra.</li>
-                            <li>Felis enim feugiat dolore viverra.</li>
-                        </ol>
-                        
-                        <h4 id="video">Videos</h4>
-                        <ol>
-                            <li>Dolor pulvinar etiam magna etiam.</li>
-                            <li>Etiam vel felis at lorem sed viverra.</li>
-                            <li>Felis enim feugiat dolore viverra.</li>
-                            <li>Dolor pulvinar etiam magna etiam.</li>
-                            <li>Etiam vel felis at lorem sed viverra.</li>
-                            <li>Felis enim feugiat dolore viverra.</li>
-                        </ol>
-                        
-                        <h4 id="case">Case Studies</h4>
-                        <ol>
-                            <li>Dolor pulvinar etiam magna etiam.</li>
-                            <li>Etiam vel felis at lorem sed viverra.</li>
-                            <li>Felis enim feugiat dolore viverra.</li>
-                            <li>Dolor pulvinar etiam magna etiam.</li>
-                            <li>Etiam vel felis at lorem sed viverra.</li>
-                            <li>Felis enim feugiat dolore viverra.</li>
-                        </ol>
-                        
-                        
+                        <div id="video">
+                            <h4> Videos</h4>
+                            <ol>
+                                <li>Felis enim feugiat dolore viverra.</li>
+                            </ol>
+                        </div>
                         
 					</div>
                     </div>
