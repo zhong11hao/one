@@ -30,6 +30,15 @@
 	<script src="js/skel.min.js"></script>
 	<script src="js/skel-layers.min.js"></script>
 	<script src="js/init.js"></script>
+	<script>
+		$(function(){
+			$("#learn_more_button").click(function() {
+   				 $('html, body').animate({
+        				scrollTop: $("#one").offset().top
+    				}, 2000);
+			});
+		});
+	</script>
 	<noscript>
 	<link rel="stylesheet" href="css/skel.css" />
 	<link rel="stylesheet" href="css/style.css" />
@@ -66,7 +75,7 @@
 			  <h2>innovation ecosystem design research</h2>
 			  <p>This is motto this is motto this is motto</p>
 			  <ul class="actions">
-			    <li><a href="#one" class="button special big">lEARN MORE</a></li>
+			    <li><div class="button special big" id="learn_more_button">lEARN MORE</div></li>
 		      </ul>
 			</section>
 
